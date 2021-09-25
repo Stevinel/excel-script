@@ -15,7 +15,7 @@ logger.add(
 )
 
 wb_with_table = openpyxl.load_workbook(
-    os.path.join(r"C:\Dev\encosts_test\upload_names", "названия точек.xlsm")
+    os.path.join(r"C:\Dev\encosts_test\upload_names", "названия точек.xlsm") #Захаркодил путь, тк без него excel ищет файл в других каталогах.
 )
 work_sheet = wb_with_table.active
 title = work_sheet.cell(row=1, column=2).value
